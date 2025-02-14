@@ -75,7 +75,8 @@ RUN python3 -m pip install git+https://github.com/NetEase-FuXi/EETQ.git
 
 # Add flute-kernel and fast_hadamard_transform for quantization testing
 RUN python3 -m pip install --no-cache-dir flute-kernel==0.4.1
-RUN python3 -m pip install --no-cache-dir fast_hadamard_transform==1.0.4.post1
+# RUN python3 -m pip install --no-cache-dir fast_hadamard_transform==1.0.4.post1
+RUN python3 -m pip install --no-cache-dir git+https://github.com/Dao-AILab/fast-hadamard-transform.git
 
 # When installing in editable mode, `transformers` is not recognized as a package.
 # this line must be added in order for python to be aware of transformers.
